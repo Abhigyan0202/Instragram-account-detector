@@ -1,0 +1,13 @@
+{%extends "account/base.html"%}
+
+{%block title%} Instragram Fake Account Detector {%endblock%}
+
+{%block body%}
+<div class="container d-flex justify-content-center">
+    <form action="{%url 'check'%}" method="get">
+        <label for="username" class="form-label fs-4 my-2">Enter account username: </label>
+        <input type="text" id="username" name="username" class="form-control my-2" style="width: 300px;">
+        <button class="btn btn-primary my-2">Check account</button>
+    </form>
+</div>
+{%endblock%}

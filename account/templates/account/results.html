@@ -1,0 +1,16 @@
+{%extends "account/base.html"%}
+
+{%block title%}Results{%endblock%}
+
+{%block body%}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row my-2">Based on features such as number of posts, followers, external links, the model predicted the following result-
+        {%if result == 1 %} 
+        <div class="text-danger fs-4 text-center">Fake</div>
+        {%else%}
+            <div class="text-success fs-4 text-center">Real</div>
+        {%endif%}
+    </div>
+    
+</div>
+{%endblock%}
